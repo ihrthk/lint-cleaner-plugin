@@ -8,9 +8,10 @@ import static org.junit.Assert.assertTrue
 
 class LintCleanerTaskTest {
 
-  @Test public void canAddTaskToProject() {
-    Project project = ProjectBuilder.builder().build()
-    def task = project.task('lintcleaner', type: LintCleanerTask)
-    assertTrue(task instanceof LintCleanerTask)
-  }
+    @Test
+    public void canAddTaskToProject() {
+        Project project = ProjectBuilder.builder().build()
+        def task = project.task('lintcleaner', type: LintCleanerTask)
+        assertTrue(task instanceof LintCleanerTask)
+    }
 }
